@@ -14,5 +14,5 @@ Dir[APP_ROOT.join('db','migrations','*_migration.rb')].each { |file| require fil
 
 
 # Sets sqlite3 database file to db/app.db
-# This will raise an error if the database has not yet been created
- SuperAR::Base.database = APP_ROOT.join('db', 'app.db')
+DB_LOCATION	 = APP_ROOT.join('db', 'app.db')
+SuperAR::Base.database = APP_ROOT.join('db', 'app.db')
